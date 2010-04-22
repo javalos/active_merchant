@@ -25,8 +25,8 @@ beanstream_interac:
   password: password
 
 braintree:
-  login: demo
-  password: password
+  login: demoapi
+  password: password1
   
 card_stream:
   login: X
