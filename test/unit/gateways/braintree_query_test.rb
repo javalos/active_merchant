@@ -76,7 +76,7 @@ class BraintreeQueryTest < Test::Unit::TestCase
         <?xml version="1.0"?>
         <nm_response>
         <customer_vault>
-        <customer id="123456" />
+        <customer id="123456" >
         <first_name>Jack</first_name>
         <last_name>Bauer</last_name>
         <address_1>123 Fake ST</address_1>
@@ -108,6 +108,7 @@ class BraintreeQueryTest < Test::Unit::TestCase
         <processor_id>proca</processor_id>
         <cc_bin>411111</cc_bin>
         <customer_vault_id>123456</customer_vault_id>
+        </customer>
         </customer_vault>
         </nm_response>
       RESPONSE

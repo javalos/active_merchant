@@ -40,7 +40,7 @@ module ActiveMerchant #:nodoc:
         response = {}
 
         xml = REXML::Document.new(xml)          
-        xml.elements.each('//nm_response/customer_vault/*') do |node|
+        xml.elements.each('//nm_response/customer_vault/customer/*') do |node|
           response[node.name.downcase.to_sym] = normalize(node.text)
         end unless xml.root.nil?
         xml.elements.each('//nm_response/error_response') do |node|
